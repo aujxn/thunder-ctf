@@ -3,20 +3,20 @@ imports:
 - path: service_account.jinja
 
 resources:
-- name: b1-npc
+- name: intro-npc
   type: service_account.jinja
-- name: b1-bucket
+- name: intro-bucket
   type: bucket_acl.jinja
   properties:
     nonce: {{ nonce }}
     acl_entries:
-    - service_account_id: b1-npc
+    - service_account_id: intro-npc
       role: OWNER
-- name: b1-bucket2
+- name: intro-bucket2
   type: bucket_acl.jinja
   properties:
     nonce: {{ nonce }}
     acl_entries:
-      - service_account_id: b1-npc
+      - service_account_id: intro-npc
         role: OWNER
 
