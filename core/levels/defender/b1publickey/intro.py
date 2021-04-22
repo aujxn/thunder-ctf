@@ -7,7 +7,7 @@ from google.oauth2 import service_account
 from core.framework import levels
 from core.framework.cloudhelpers import deployments, iam, gcstorage, cloudfunctions
 
-LEVEL_PATH = 'thunder/intro'
+LEVEL_PATH = 'defender/intro'
 RESOURCE_PREFIX = 'intro'
 FUNCTION_LOCATION = 'us-central1'
 
